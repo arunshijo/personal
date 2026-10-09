@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Arun Shijo — IT Support Specialist | IT Support Technician | Riga, Latvia</title>
+  <meta name="title" content="Arun Shijo — IT Support Specialist | IT Support Technician | Riga, Latvia" />
+  <meta name="description" content="Professional portfolio of Arun Shijo — IT Support Specialist & IT Support Technician based in Riga, Latvia. MSc in Computer Science, experienced at TELUS Digital & Goodluck IT Solutions. Windows, Linux, Microsoft 365, hardware troubleshooting, and ticketing systems." />
+  <meta name="keywords" content="Arun Shijo, IT Support Specialist, IT Support Technician, Riga, Latvia, TELUS Digital, ISMA University, Microsoft 365, Windows 10, Windows 11, Linux, Hardware Troubleshooting, Help Desk, Networking, TCP/IP, DNS, DHCP" />
+  <meta name="author" content="Arun Shijo" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arunshijo.dev/" />
+  <meta property="og:title" content="Arun Shijo — IT Support Specialist | Riga, Latvia" />
+  <meta property="og:description" content="Explore Arun Shijo's portfolio — IT Support Specialist with an MSc in Computer Science, TELUS Digital experience, and dual interactive GUI and Terminal modes." />
+  <meta property="og:image" content="favicon.svg" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Arun Shijo — IT Support Specialist | Riga, Latvia" />
+  <meta name="twitter:description" content="IT Support Specialist & Technician based in Riga, Latvia. Dual GUI & Terminal portfolio." />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#07090e',
+              card: '#0f172a',
+              emerald: '#10b981',
+              cyan: '#06b6d4',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured JSON-LD Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arun Shijo",
+    "jobTitle": "IT Support Specialist | IT Support Technician",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "TELUS Digital"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "ISMA University",
+        "location": "Riga, Latvia"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "University of Calicut",
+        "location": "India"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Riga",
+      "addressCountry": "Latvia"
+    },
+    "email": "mailto:arunshijo789@gmail.com",
+    "telephone": "+37128774002",
+    "sameAs": [
+      "https://www.linkedin.com/in/arunshijo/"
+    ],
+    "knowsAbout": [
+      "Windows 10/11",
+      "Linux",
+      "Hardware troubleshooting",
+      "Desktop and laptop configuration",
+      "Printer support",
+      "Microsoft 365",
+      "Microsoft Office",
+      "Outlook",
+      "Teams",
+      "OneDrive",
+      "SharePoint",
+      "Help desk support",
+      "Incident management",
+      "Ticketing systems",
+      "Remote technical support",
+      "Technical documentation",
+      "TCP/IP",
+      "DNS",
+      "DHCP",
+      "Google Workspace",
+      "CRM systems"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#07090e] text-slate-100 antialiased selection:bg-emerald-500 selection:text-black">
+
+  <!-- Ambient Backdrop -->
+  <div class="ambient-mesh"></div>
+  <div class="ambient-grid"></div>
+
+  <!-- Toast Notification Hub -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- ========================================== -->
+  <!-- INITIAL VISITOR EXPERIENCE: WELCOME MODAL  -->
+  <!-- ========================================== -->
+  <div id="welcome-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div class="spot-card w-full max-w-xl p-6 sm:p-8 rounded-3xl bg-zinc-900/90 border border-zinc-700/80 shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+      <div class="flex items-center gap-2 text-emerald-400 font-mono text-xs mb-3">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>&gt; guest_session.init()</span>
+      </div>
+      
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">I'm Arun Shijo.</h2>
+      <p class="text-zinc-400 text-sm mt-1">IT Support Specialist & Technician · Riga, Latvia</p>
+      
+      <div class="mt-6 p-4 rounded-xl bg-zinc-950/60 border border-zinc-800 text-xs sm:text-sm text-zinc-300">
+        Before we begin — what kind of portfolio experience do you prefer?
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+        <!-- Option 1: Standard Portfolio -->
+        <button id="choose-standard" class="p-5 rounded-2xl bg-zinc-800/60 hover:bg-zinc-800 border border-zinc-700 hover:border-emerald-500/60 transition-all text-left group">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl font-bold mb-3 group-hover:scale-110 transition-transform">
+            ◐
+          </div>
+          <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-colors">Standard Portfolio</h3>
+          <p class="text-xs text-zinc-400 mt-1 leading-relaxed">Clean, modern recruiter layout. Smooth scrolling, experience timeline, and verified skills.</p>
+          <div class="mt-4 text-[11px] font-mono text-zinc-500">
+            Press <kbd class="px-1.5 py-0.5 rounded bg-zinc-700 text-zinc-200 font-bold">N</kbd> or click
+          </div>
+        </button>
+
+        <!-- Option 2: Interactive Terminal -->
+        <button id="choose-terminal" class="p-5 rounded-2xl bg-zinc-800/60 hover:bg-zinc-800 border border-zinc-700 hover:border-cyan-500/60 transition-all text-left group">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl font-mono font-bold mb-3 group-hover:scale-110 transition-transform">
+            &gt;_
+          </div>
+          <h3 class="text-base font-bold text-white group-hover:text-cyan-400 transition-colors">IT Support Terminal</h3>
+          <p class="text-xs text-zinc-400 mt-1 leading-relaxed">Simulated support terminal. Type commands like <code class="text-cyan-300">help</code>, <code class="text-cyan-300">skills</code>, <code class="text-cyan-300">whoami</code>.</p>
+          <div class="mt-4 text-[11px] font-mono text-zinc-500">
+            Press <kbd class="px-1.5 py-0.5 rounded bg-zinc-700 text-zinc-200 font-bold">T</kbd> or click
+          </div>
+        </button>
+      </div>
+
+      <div class="mt-6 text-center text-xs text-zinc-500">
+        You can switch between both experiences anytime from the navigation bar.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- MODE 1: STANDARD PORTFOLIO (GUI EXPERIENCE)-->
+  <!-- ========================================== -->
+  <div id="standard-view" class="relative z-10 min-h-screen flex flex-col">
+    
+    <!-- Floating Navigation Bar -->
+    <header class="fixed top-4 inset-x-0 z-40 px-4 sm:px-6 max-w-5xl mx-auto pointer-events-none">
+      <nav class="pointer-events-auto flex items-center justify-between px-4 py-2.5 rounded-full bg-zinc-900/70 border border-white/10 backdrop-blur-xl shadow-2xl">
+        <!-- Logo & Status -->
+        <a href="#home" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-emerald-500 to-cyan-500 text-black font-extrabold flex items-center justify-center text-xs font-mono tracking-tighter">
+            AS
+          </div>
+          <div class="flex flex-col">
+            <span class="text-sm font-bold tracking-tight text-white group-hover:text-emerald-400 transition-colors">Arun Shijo</span>
+            <span class="text-[10px] text-emerald-400 font-mono flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Riga, LV
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-1">
+          <a href="#about" class="desktop-nav-link text-xs font-medium text-zinc-400 hover:text-white px-3 py-1.5 rounded-full transition-all">About</a>
+          <a href="#skills" class="desktop-nav-link text-xs font-medium text-zinc-400 hover:text-white px-3 py-1.5 rounded-full transition-all">Skills</a>
+          <a href="#experience" class="desktop-nav-link text-xs font-medium text-zinc-400 hover:text-white px-3 py-1.5 rounded-full transition-all">Experience</a>
+          <a href="#education" class="desktop-nav-link text-xs font-medium text-zinc-400 hover:text-white px-3 py-1.5 rounded-full transition-all">Education</a>
+          <a href="#languages" class="desktop-nav-link text-xs font-medium text-zinc-400 hover:text-white px-3 py-1.5 rounded-full transition-all">Languages</a>
+          <a href="#contact" class="desktop-nav-link text-xs font-medium text-zinc-400 hover:text-white px-3 py-1.5 rounded-full transition-all">Contact</a>
+        </div>
+
+        <!-- Mode Switcher Pill & Actions -->
+        <div class="flex items-center gap-2">
+          <!-- Switch to Terminal Pill -->
+          <button id="mode-switch-pill" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-300 text-xs font-mono font-medium transition-all shadow-sm group" title="Switch to Terminal Experience (or press T)">
+            <span class="text-emerald-400 font-bold">&gt;_</span>
+            <span>IT Terminal</span>
+            <kbd class="hidden sm:inline-block px-1 py-0.2 bg-emerald-950/60 rounded text-[9px] text-emerald-400/90 font-mono">T</kbd>
+          </button>
+
+          <!-- Mobile Menu Trigger -->
+          <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors" aria-label="Toggle Navigation Menu">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden pointer-events-auto mt-2 p-4 rounded-2xl bg-zinc-900/95 border border-white/10 backdrop-blur-2xl shadow-2xl flex flex-col gap-2 text-sm font-medium">
+        <a href="#about" class="px-3 py-2 rounded-xl text-zinc-300 hover:bg-zinc-800 transition-colors">About Me</a>
+        <a href="#skills" class="px-3 py-2 rounded-xl text-zinc-300 hover:bg-zinc-800 transition-colors">Technical Skills</a>
+        <a href="#experience" class="px-3 py-2 rounded-xl text-zinc-300 hover:bg-zinc-800 transition-colors">Professional Experience</a>
+        <a href="#education" class="px-3 py-2 rounded-xl text-zinc-300 hover:bg-zinc-800 transition-colors">Education</a>
+        <a href="#languages" class="px-3 py-2 rounded-xl text-zinc-300 hover:bg-zinc-800 transition-colors">Languages & Licence</a>
+        <a href="#contact" class="px-3 py-2 rounded-xl text-zinc-300 hover:bg-zinc-800 transition-colors">Contact</a>
+        <div class="pt-2 border-t border-zinc-800 flex justify-between items-center text-xs text-zinc-400 font-mono">
+          <span>Current Location: Riga, Latvia</span>
+          <span class="text-emerald-400">Available</span>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION                               -->
+    <!-- ========================================== -->
+    <section id="home" class="pt-32 sm:pt-40 pb-16 sm:pb-24 px-4 sm:px-6 max-w-6xl mx-auto w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Availability Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-mono font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>OPEN TO IT SUPPORT OPPORTUNITIES IN RIGA & REMOTE</span>
+          </div>
+
+          <!-- Main Title & Heading -->
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-none">
+              Arun <span class="text-gradient-emerald">Shijo</span>
+            </h1>
+            <div class="text-xl sm:text-2xl font-semibold text-zinc-300 font-mono flex items-center gap-2">
+              <span class="text-cyan-400">&gt;</span>
+              <span>IT Support Specialist</span>
+              <span class="text-zinc-600">|</span>
+              <span class="text-zinc-400 text-lg sm:text-xl">IT Support Technician</span>
+            </div>
+          </div>
+
+          <!-- Bio Pitch -->
+          <p class="text-base sm:text-lg text-zinc-400 leading-relaxed font-sans max-w-xl">
+            Customer-focused IT professional based in <strong class="text-zinc-200">Riga, Latvia</strong> with an <strong class="text-zinc-200">MSc in Computer Science</strong> and hands-on enterprise support experience at <strong class="text-emerald-400">TELUS Digital</strong> and <strong class="text-cyan-400">Goodluck IT Solutions</strong>. Expert in Microsoft 365, Windows 10/11, Linux, hardware diagnostics, incident management, and ticketing workflows.
+          </p>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#contact" class="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-sm transition-all shadow-lg shadow-emerald-500/20 flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span>Get in Touch</span>
+            </a>
+
+            <button onclick="window.switchPortfolioMode('terminal')" class="px-5 py-3 rounded-xl bg-zinc-800/80 hover:bg-zinc-800 border border-zinc-700 hover:border-emerald-500/50 text-white font-medium text-sm transition-all flex items-center gap-2">
+              <span class="text-emerald-400 font-mono font-bold">&gt;_</span>
+              <span>Launch Terminal</span>
+            </button>
+
+            <a href="https://www.linkedin.com/in/arunshijo/" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-cyan-500/50 text-zinc-300 hover:text-white text-sm transition-all flex items-center gap-2" title="View LinkedIn Profile">
+              <i data-lucide="linkedin" class="w-4 h-4 text-cyan-400"></i>
+              <span>LinkedIn</span>
+            </a>
+
+            <button data-copy="arunshijo789@gmail.com" data-copy-label="Copied email to clipboard!" class="px-3.5 py-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-400 hover:text-zinc-200 text-sm transition-all" title="Copy Email Address">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- Quick Contact Chips -->
+          <div class="pt-4 flex flex-wrap gap-4 text-xs font-mono text-zinc-400 border-t border-zinc-800/70">
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span>Riga, Latvia</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-cyan-400"></i>
+              <a href="tel:+37128774002" class="hover:text-emerald-400 transition-colors">+371 28774002</a>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="clock" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span class="riga-time-display">GMT+3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero ID Card (5 cols) -->
+        <div class="lg:col-span-5">
+          <div class="profile-id-card p-6 sm:p-7 rounded-3xl shadow-2xl space-y-5">
+            <!-- Header with Badge -->
+            <div class="flex items-center justify-between pb-4 border-b border-white/10">
+              <div class="flex items-center gap-3">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-cyan-500 text-black font-black flex items-center justify-center text-xl font-mono tracking-tight shadow-md">
+                  AS
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-white">Arun Shijo</h3>
+                  <p class="text-xs text-zinc-400 font-mono">IT Support Specialist</p>
+                </div>
+              </div>
+              <div class="px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-[10px] font-mono font-bold">
+                VERIFIED
+              </div>
+            </div>
+
+            <!-- Specs Grid -->
+            <div class="space-y-2.5 font-mono text-xs">
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-black/40 border border-white/5">
+                <span class="text-zinc-400">LOCATION</span>
+                <span class="text-zinc-200 font-semibold">Riga, Latvia</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-black/40 border border-white/5">
+                <span class="text-zinc-400">ACADEMICS</span>
+                <span class="text-emerald-400 font-semibold">MSc Computer Science</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-black/40 border border-white/5">
+                <span class="text-zinc-400">EXPERIENCE</span>
+                <span class="text-zinc-200">TELUS Digital · Goodluck IT</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-black/40 border border-white/5">
+                <span class="text-zinc-400">DRIVING</span>
+                <span class="text-cyan-400 font-semibold">Valid Latvian Licence 🚗</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-black/40 border border-white/5">
+                <span class="text-zinc-400">LANGUAGES</span>
+                <span class="text-zinc-200">English, Latvian, Italian</span>
+              </div>
+            </div>
+
+            <!-- Recruiter Quick Bar inside ID Card -->
+            <div class="pt-2 flex items-center justify-between text-xs font-mono">
+              <span class="text-emerald-400 flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>Ready for Hire</span>
+              </span>
+              <a href="#contact" class="text-zinc-400 hover:text-white underline text-[11px]">Direct Contact &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- TECH MARQUEE RIBBON                        -->
+    <!-- ========================================== -->
+    <div class="w-full border-y border-zinc-800/80 bg-zinc-950/60 py-3 overflow-hidden backdrop-blur-md">
+      <div class="flex gap-8 whitespace-nowrap animate-marquee font-mono text-xs text-zinc-400">
+        <span class="flex items-center gap-2"><span class="text-emerald-400">✦</span> Windows 10/11</span>
+        <span class="flex items-center gap-2"><span class="text-cyan-400">✦</span> Linux Workstations</span>
+        <span class="flex items-center gap-2"><span class="text-emerald-400">✦</span> Hardware Troubleshooting</span>
+        <span class="flex items-center gap-2"><span class="text-cyan-400">✦</span> Desktop & Laptop Configuration</span>
+        <span class="flex items-center gap-2"><span class="text-emerald-400">✦</span> Printer Support</span>
+        <span class="flex items-center gap-2"><span class="text-cyan-400">✦</span> Microsoft 365 & Office</span>
+        <span class="flex items-center gap-2"><span class="text-emerald-400">✦</span> Outlook, Teams & OneDrive</span>
+        <span class="flex items-center gap-2"><span class="text-cyan-400">✦</span> Help Desk & Incident Management</span>
+        <span class="flex items-center gap-2"><span class="text-emerald-400">✦</span> Ticketing & CRM Systems</span>
+        <span class="flex items-center gap-2"><span class="text-cyan-400">✦</span> Remote Technical Support</span>
+        <span class="flex items-center gap-2"><span class="text-emerald-400">✦</span> TCP/IP, DNS & DHCP</span>
+        <span class="flex items-center gap-2"><span class="text-cyan-400">✦</span> Google Workspace</span>
+      </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- ABOUT ME SECTION                           -->
+    <!-- ========================================== -->
+    <section id="about" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto w-full">
+      <div class="space-y-4 mb-12">
+        <div class="text-emerald-400 font-mono text-xs tracking-widest uppercase flex items-center gap-2">
+          <span>// 01</span>
+          <span>ABOUT ME</span>
+          <span class="h-px w-12 bg-emerald-500/40"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Reliable Support, Rigorous Troubleshooting.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <div class="md:col-span-7 space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
+          <p>
+            I am an IT Support Specialist and Technician located in <strong class="text-white">Riga, Latvia</strong>, equipped with an <strong class="text-emerald-400">MSc in Computer Science</strong> from ISMA University.
+          </p>
+          <p>
+            My experience bridges hands-on enterprise product support at <strong class="text-white">TELUS Digital</strong> and direct endpoint and infrastructure technician roles at <strong class="text-white">Goodluck IT Solutions</strong>. Whether handling critical escalations, resolving operating system and peripheral anomalies, or provisioning user cloud workspaces in <strong class="text-white">Microsoft 365</strong> and <strong class="text-white">Google Workspace</strong>, I approach every challenge with systematic root-cause analysis and clear communication.
+          </p>
+          <p>
+            With a valid <strong class="text-cyan-400">Latvian driving licence</strong>, I am fully equipped to handle on-site field visits, client visits, workstation deliveries, and infrastructure maintenance across Riga and neighbouring regions.
+          </p>
+        </div>
+
+        <!-- Right Quick Highlights Grid -->
+        <div class="md:col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-3">
+          <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+            <div class="text-xs font-mono text-emerald-400">LOCATION & LEGAL STATUS</div>
+            <div class="text-sm font-bold text-white mt-0.5">Riga, Latvia</div>
+            <p class="text-xs text-zinc-400 mt-1">Resident in Riga, actively open for full-time on-site, hybrid, or remote positions.</p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+            <div class="text-xs font-mono text-cyan-400">FIELD MOBILITY</div>
+            <div class="text-sm font-bold text-white mt-0.5">Valid Latvian Driving Licence</div>
+            <p class="text-xs text-zinc-400 mt-1">Full legal driving licence in Latvia for rapid on-site IT calls and equipment transit.</p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+            <div class="text-xs font-mono text-emerald-400">EDUCATION LEVEL</div>
+            <div class="text-sm font-bold text-white mt-0.5">Master of Science (MSc)</div>
+            <p class="text-xs text-zinc-400 mt-1">Computer Science degree from ISMA University, Riga, Latvia (2023–2025).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- TECHNICAL SKILLS SECTION                   -->
+    <!-- ========================================== -->
+    <section id="skills" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto w-full">
+      <div class="space-y-4 mb-8">
+        <div class="text-emerald-400 font-mono text-xs tracking-widest uppercase flex items-center gap-2">
+          <span>// 02</span>
+          <span>TECHNICAL SKILLS MATRIX</span>
+          <span class="h-px w-12 bg-emerald-500/40"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Verified Competencies & IT Domains.
+        </h2>
+        <p class="text-sm text-zinc-400 max-w-2xl">
+          Derived strictly from verified professional experience and qualifications. Organized by core IT enterprise areas.
+        </p>
+      </div>
+
+      <!-- Domain Filter Tabs -->
+      <div class="flex flex-wrap items-center gap-2 mb-8">
+        <button class="skill-filter-tab active px-3.5 py-1.5 rounded-full text-xs font-mono font-medium transition-all bg-emerald-500 text-black" data-filter="all">
+          All (20)
+        </button>
+        <button class="skill-filter-tab px-3.5 py-1.5 rounded-full text-xs font-mono font-medium transition-all bg-zinc-800 text-zinc-300 hover:text-white" data-filter="os">
+          OS & Platforms
+        </button>
+        <button class="skill-filter-tab px-3.5 py-1.5 rounded-full text-xs font-mono font-medium transition-all bg-zinc-800 text-zinc-300 hover:text-white" data-filter="hardware">
+          Hardware & Endpoints
+        </button>
+        <button class="skill-filter-tab px-3.5 py-1.5 rounded-full text-xs font-mono font-medium transition-all bg-zinc-800 text-zinc-300 hover:text-white" data-filter="cloud">
+          Cloud & Workspace
+        </button>
+        <button class="skill-filter-tab px-3.5 py-1.5 rounded-full text-xs font-mono font-medium transition-all bg-zinc-800 text-zinc-300 hover:text-white" data-filter="itsm">
+          ITSM & Support
+        </button>
+        <button class="skill-filter-tab px-3.5 py-1.5 rounded-full text-xs font-mono font-medium transition-all bg-zinc-800 text-zinc-300 hover:text-white" data-filter="networking">
+          Networking
+        </button>
+      </div>
+
+      <!-- Dynamic Skills Container -->
+      <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- PROFESSIONAL EXPERIENCE SECTION            -->
+    <!-- ========================================== -->
+    <section id="experience" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto w-full">
+      <div class="space-y-4 mb-12">
+        <div class="text-emerald-400 font-mono text-xs tracking-widest uppercase flex items-center gap-2">
+          <span>// 03</span>
+          <span>PROFESSIONAL EXPERIENCE</span>
+          <span class="h-px w-12 bg-emerald-500/40"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Employment History & Practical Impact.
+        </h2>
+        <p class="text-sm text-zinc-400 max-w-2xl">
+          Verifiable employment dates and support roles across enterprise operations in Riga, Latvia and India.
+        </p>
+      </div>
+
+      <!-- Experience Timeline Container -->
+      <div id="experience-container" class="space-y-2"></div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- EDUCATION SECTION                          -->
+    <!-- ========================================== -->
+    <section id="education" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto w-full">
+      <div class="space-y-4 mb-12">
+        <div class="text-cyan-400 font-mono text-xs tracking-widest uppercase flex items-center gap-2">
+          <span>// 04</span>
+          <span>ACADEMIC QUALIFICATIONS</span>
+          <span class="h-px w-12 bg-cyan-500/40"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Education & Formal Degrees.
+        </h2>
+      </div>
+
+      <!-- Education Cards Container -->
+      <div id="education-container" class="grid grid-cols-1 sm:grid-cols-2 gap-6"></div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- LANGUAGES & ADDITIONAL INFORMATION         -->
+    <!-- ========================================== -->
+    <section id="languages" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto w-full">
+      <div class="space-y-4 mb-12">
+        <div class="text-emerald-400 font-mono text-xs tracking-widest uppercase flex items-center gap-2">
+          <span>// 05</span>
+          <span>LANGUAGES & MOBILITY</span>
+          <span class="h-px w-12 bg-emerald-500/40"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Language Proficiencies & Field Readiness.
+        </h2>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Languages Cards -->
+        <div id="languages-container" class="grid grid-cols-1 sm:grid-cols-3 gap-4"></div>
+
+        <!-- Additional Information / Driving Licence -->
+        <div id="additional-container"></div>
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- CONTACT SECTION                            -->
+    <!-- ========================================== -->
+    <section id="contact" class="py-20 px-4 sm:px-6 max-w-5xl mx-auto w-full">
+      <div class="space-y-4 mb-12">
+        <div class="text-emerald-400 font-mono text-xs tracking-widest uppercase flex items-center gap-2">
+          <span>// 06</span>
+          <span>CONTACT & RECRUITMENT</span>
+          <span class="h-px w-12 bg-emerald-500/40"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Let's Connect & Discuss IT Support Roles.
+        </h2>
+        <p class="text-sm text-zinc-400 max-w-2xl">
+          I am actively available for interviews and recruitment inquiries in Riga, Latvia. Reach me directly through any of the channels below.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Direct Email Card -->
+        <div class="spot-card p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-white">Email Address</h3>
+            <p class="text-xs text-zinc-400 mt-1">Direct communication for job opportunities</p>
+            <a href="mailto:arunshijo789@gmail.com" class="text-sm font-mono text-emerald-400 hover:text-emerald-300 break-all block mt-3 font-semibold">
+              arunshijo789@gmail.com
+            </a>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <a href="mailto:arunshijo789@gmail.com" class="text-xs text-zinc-300 hover:text-white font-medium flex items-center gap-1">
+              <span>Send Email</span> &rarr;
+            </a>
+            <button data-copy="arunshijo789@gmail.com" data-copy-label="Copied arunshijo789@gmail.com" class="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-mono">
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <!-- Direct Telephone Card -->
+        <div class="spot-card p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-4">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-white">Telephone / WhatsApp</h3>
+            <p class="text-xs text-zinc-400 mt-1">Direct phone calls and messaging</p>
+            <a href="tel:+37128774002" class="text-sm font-mono text-cyan-400 hover:text-cyan-300 block mt-3 font-semibold">
+              +371 28774002
+            </a>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <a href="tel:+37128774002" class="text-xs text-zinc-300 hover:text-white font-medium flex items-center gap-1">
+              <span>Call Direct</span> &rarr;
+            </a>
+            <button data-copy="+37128774002" data-copy-label="Copied +371 28774002" class="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-mono">
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <!-- LinkedIn Card -->
+        <div class="spot-card p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-white">LinkedIn Profile</h3>
+            <p class="text-xs text-zinc-400 mt-1">Professional networking & recommendations</p>
+            <a href="https://www.linkedin.com/in/arunshijo/" target="_blank" rel="noopener noreferrer" class="text-sm font-mono text-blue-400 hover:text-blue-300 break-all block mt-3 font-semibold">
+              linkedin.com/in/arunshijo
+            </a>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <a href="https://www.linkedin.com/in/arunshijo/" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-300 hover:text-white font-medium flex items-center gap-1">
+              <span>Open Profile</span> &rarr;
+            </a>
+            <button data-copy="https://www.linkedin.com/in/arunshijo/" data-copy-label="Copied LinkedIn URL" class="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-mono">
+              Copy
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Recruiter Actions Bar -->
+      <div class="mt-10 p-6 rounded-2xl bg-zinc-900/60 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <h4 class="text-sm font-bold text-white">Recruiter Quick Actions</h4>
+          <p class="text-xs text-zinc-400 mt-0.5">Print or save CV summary, or toggle the interactive terminal console.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <button id="print-cv-btn" class="px-4 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs font-mono font-medium transition-all flex items-center gap-2">
+            <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+            <span>Print CV View</span>
+          </button>
+          <button onclick="window.switchPortfolioMode('terminal')" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-mono font-semibold transition-all flex items-center gap-2">
+            <span>&gt;_ Launch Terminal</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="mt-auto border-t border-zinc-800/80 bg-zinc-950/80 py-8 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
+        <div>
+          © 2026 Arun Shijo · IT Support Specialist · Riga, Latvia
+        </div>
+        <div class="flex items-center gap-4">
+          <button id="reset-preference-btn" class="hover:text-zinc-300 underline transition-colors">
+            Reset Welcome Screen Choice
+          </button>
+          <span>·</span>
+          <a href="#home" class="hover:text-emerald-400 transition-colors">Back to Top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- MODE 2: INTERACTIVE IT TERMINAL (FULLSCREEN / SIMULATION) -->
+  <!-- ========================================================= -->
+  <div id="terminal-view" class="fixed inset-0 z-50 hidden flex-col bg-[#080b12] text-zinc-200 font-mono">
+    
+    <!-- Terminal Shell Container -->
+    <div class="h-full w-full flex flex-col p-2 sm:p-4 md:p-6 max-w-7xl mx-auto">
+      
+      <!-- Terminal Frame Window -->
+      <div class="terminal-window rounded-2xl flex-1 flex flex-col overflow-hidden border border-zinc-700/80 shadow-2xl">
+        
+        <!-- Window Title Bar -->
+        <div class="terminal-titlebar px-4 py-3 flex items-center justify-between select-none">
+          <!-- Traffic dots -->
+          <div class="flex items-center gap-2">
+            <span class="terminal-dot terminal-dot-red"></span>
+            <span class="terminal-dot terminal-dot-yellow"></span>
+            <span class="terminal-dot terminal-dot-green"></span>
+            <span class="text-xs text-zinc-400 font-mono ml-2 hidden sm:inline">arun@riga-support:~ (bash)</span>
+          </div>
+
+          <!-- Center info -->
+          <div class="text-xs font-mono text-zinc-400 hidden md:block">
+            Riga IT Support Console · Uptime: 99.9%
+          </div>
+
+          <!-- Switch to GUI Pill -->
+          <div class="flex items-center gap-2">
+            <button id="terminal-switch-pill" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-sans font-bold transition-all shadow-sm">
+              <i data-lucide="layout" class="w-3.5 h-3.5"></i>
+              <span>GUI Portfolio</span>
+              <kbd class="px-1 py-0.2 bg-black/20 rounded text-[9px] font-mono">N</kbd>
+            </button>
+          </div>
+        </div>
+
+        <!-- Terminal Body Grid: Sidebar + Terminal Screen -->
+        <div class="flex-1 flex flex-col md:flex-row min-h-0 overflow-hidden">
+          
+          <!-- Sidebar: Commands & Quick Actions (Desktop) -->
+          <aside class="w-full md:w-64 border-b md:border-b-0 md:border-r border-zinc-800/80 bg-zinc-950/60 p-4 flex flex-col justify-between overflow-y-auto shrink-0 hidden sm:flex">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-500 text-black font-extrabold flex items-center justify-center font-mono text-sm">
+                  AS
+                </div>
+                <div>
+                  <h3 class="font-bold text-white text-sm font-sans">Arun Shijo</h3>
+                  <p class="text-[11px] text-emerald-400 font-mono">IT Support Specialist</p>
+                </div>
+              </div>
+              <p class="text-xs text-zinc-400 font-sans leading-relaxed mb-4">
+                Virtual IT console. Type commands or click any shortcut below to inspect my profile.
+              </p>
+
+              <!-- Quick Start Command Buttons -->
+              <div class="space-y-1">
+                <div class="text-[10px] uppercase font-mono text-zinc-500 tracking-wider mb-1.5">Quick Commands</div>
+                <button data-cmd="help" class="w-full text-left px-2 py-1.5 rounded hover:bg-zinc-800 text-xs text-zinc-300 hover:text-emerald-400 flex items-center justify-between transition-colors">
+                  <span><span class="text-emerald-500">$</span> help</span>
+                  <span class="text-zinc-600 text-[10px]">commands</span>
+                </button>
+                <button data-cmd="whoami" class="w-full text-left px-2 py-1.5 rounded hover:bg-zinc-800 text-xs text-zinc-300 hover:text-emerald-400 flex items-center justify-between transition-colors">
+                  <span><span class="text-emerald-500">$</span> whoami</span>
+                  <span class="text-zinc-600 text-[10px]">identity</span>
+                </button>
+                <button data-cmd="skills" class="w-full text-left px-2 py-1.5 rounded hover:bg-zinc-800 text-xs text-zinc-300 hover:text-emerald-400 flex items-center justify-between transition-colors">
+                  <span><span class="text-emerald-500">$</span> skills</span>
+                  <span class="text-zinc-600 text-[10px]">matrix</span>
+                </button>
+                <button data-cmd="experience" class="w-full text-left px-2 py-1.5 rounded hover:bg-zinc-800 text-xs text-zinc-300 hover:text-emerald-400 flex items-center justify-between transition-colors">
+                  <span><span class="text-emerald-500">$</span> experience</span>
+                  <span class="text-zinc-600 text-[10px]">history</span>
+                </button>
+                <button data-cmd="education" class="w-full text-left px-2 py-1.5 rounded hover:bg-zinc-800 text-xs text-zinc-300 hover:text-emerald-400 flex items-center justify-between transition-colors">
+                  <span><span class="text-emerald-500">$</span> education</span>
+                  <span class="text-zinc-600 text-[10px]">degrees</span>
+                </button>
+                <button data-cmd="contact" class="w-full text-left px-2 py-1.5 rounded hover:bg-zinc-800 text-xs text-zinc-300 hover:text-emerald-400 flex items-center justify-between transition-colors">
+                  <span><span class="text-emerald-500">$</span> contact</span>
+                  <span class="text-zinc-600 text-[10px]">reach out</span>
+                </button>
+                <button data-cmd="neofetch" class="w-full text-left px-2 py-1.5 rounded hover:bg-zinc-800 text-xs text-zinc-300 hover:text-emerald-400 flex items-center justify-between transition-colors">
+                  <span><span class="text-emerald-500">$</span> neofetch</span>
+                  <span class="text-zinc-600 text-[10px]">sysinfo</span>
+                </button>
+                <button data-cmd="ls" class="w-full text-left px-2 py-1.5 rounded hover:bg-zinc-800 text-xs text-zinc-300 hover:text-emerald-400 flex items-center justify-between transition-colors">
+                  <span><span class="text-emerald-500">$</span> ls</span>
+                  <span class="text-zinc-600 text-[10px]">files</span>
+                </button>
+                <button data-cmd="clear" class="w-full text-left px-2 py-1.5 rounded hover:bg-zinc-800 text-xs text-zinc-300 hover:text-yellow-400 flex items-center justify-between transition-colors">
+                  <span><span class="text-yellow-500">$</span> clear</span>
+                  <span class="text-zinc-600 text-[10px]">reset</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500">
+              <div>📍 Riga, Latvia</div>
+              <div>🚗 Latvian Driving Licence</div>
+              <button onclick="window.switchPortfolioMode('standard')" class="mt-2 text-emerald-400 hover:underline block">
+                ← Switch to GUI Portfolio
+              </button>
+            </div>
+          </aside>
+
+          <!-- Main Terminal Screen Area -->
+          <div class="flex-1 flex flex-col min-w-0 min-h-0 bg-[#090d16]">
+            
+            <!-- Output Log Scroll View -->
+            <div id="terminal-screen" class="flex-1 overflow-y-auto p-4 sm:p-6 space-y-3 cursor-text">
+              <div id="terminal-output" class="space-y-4"></div>
+              
+              <!-- Active Input Row -->
+              <div class="flex items-center gap-2 pt-2">
+                <span id="terminal-prompt" class="text-emerald-400 font-bold select-none text-xs sm:text-sm">arun@riga-support:~$</span>
+                <input 
+                  type="text" 
+                  id="terminal-input" 
+                  class="flex-1 bg-transparent border-0 outline-none text-zinc-100 font-mono text-xs sm:text-sm p-0 m-0 caret-emerald-400 focus:ring-0" 
+                  autocomplete="off" 
+                  autocorrect="off" 
+                  autocapitalize="off" 
+                  spellcheck="false" 
+                  aria-label="Terminal command prompt"
+                />
+              </div>
+            </div>
+
+            <!-- Mobile Quick Chips Bar (Touch Friendly) -->
+            <div class="p-2 border-t border-zinc-800/80 bg-zinc-950 flex items-center gap-1.5 overflow-x-auto text-xs shrink-0">
+              <span class="text-[10px] text-zinc-500 uppercase px-1 shrink-0 font-mono">Run:</span>
+              <button data-cmd="help" class="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-200 shrink-0 font-mono">help</button>
+              <button data-cmd="whoami" class="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-200 shrink-0 font-mono">whoami</button>
+              <button data-cmd="skills" class="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-200 shrink-0 font-mono">skills</button>
+              <button data-cmd="experience" class="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-200 shrink-0 font-mono">exp</button>
+              <button data-cmd="education" class="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-200 shrink-0 font-mono">edu</button>
+              <button data-cmd="contact" class="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-200 shrink-0 font-mono">contact</button>
+              <button data-cmd="clear" class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-700 text-yellow-400 shrink-0 font-mono">clear</button>
+              <button data-cmd="gui" class="px-2.5 py-1 rounded bg-emerald-500 text-black font-semibold shrink-0 font-sans">GUI mode</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
